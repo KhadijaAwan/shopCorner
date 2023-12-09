@@ -1,7 +1,7 @@
 "use client";
 
 import { useCart } from "@/context/cartContext";
-import { Box, Flex, Text } from "@chakra-ui/react";
+import { Box, Flex, Text, Center} from "@chakra-ui/react";
 import { Elements } from "@stripe/react-stripe-js";
 import { StripeElementsOptions, loadStripe } from "@stripe/stripe-js";
 import { useRouter } from "next/navigation";
@@ -116,10 +116,12 @@ const CheckoutData = () => {
       )}
 
       {paymentDone && (
-        <Flex width="300px" mx="auto" direction="column" height="300px" py={20}>
-          <Text mb={7} fontFamily="monospace" fontSize="md">
+        <Flex width="300px" mx="auto" direction="column" height="300px" py={20} alignItems="center"
+        justifyContent="center">
+          <Text mb={7} fontFamily="monospace" fontSize="md" textAlign="center">
             Your Payment is Done
           </Text>
+          <Center>
           <GetButton
             buttonName="View Orders"
             buttonWidth="200px"
@@ -129,6 +131,7 @@ const CheckoutData = () => {
             hoverBgColor="purple.700"
             hoverTextColor="white"
           />
+          </Center>
         </Flex>
       )}
     </Box>
