@@ -1,3 +1,8 @@
+If you need to view the admin dashboard.
+Checkout the credentials:
+Email: khadijaawan@gmail.com
+Password: khadijaawan
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
